@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@algorithms/backtracking": [
+        "libs/problem-solving/brute-force/backtracking/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
