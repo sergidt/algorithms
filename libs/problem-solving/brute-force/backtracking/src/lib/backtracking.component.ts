@@ -6,8 +6,11 @@ import { MarkdownModule } from 'ngx-markdown';
   selector: 'backtracking',
   standalone: true,
   imports: [CommonModule, MarkdownModule],
-  templateUrl: './backtracking.component.html',
-  styleUrl: './backtracking.component.scss',
+  template: `
+  <h1>Backtracking</h1>
+  <markdown [data]="markdown"></markdown>
+  <router-outlet></router-outlet>
+  `,
 })
 export class BacktrackingComponent {
   markdown = `#
