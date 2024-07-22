@@ -1,16 +1,17 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 import { MarkdownModule } from 'ngx-markdown';
 
 @Component({
   selector: 'backtracking',
   standalone: true,
-  imports: [CommonModule, MarkdownModule],
+  imports: [CommonModule, MarkdownModule, RouterOutlet],
   template: `
-  <h1>Backtracking</h1>
-  <markdown [data]="markdown"></markdown>
-  <router-outlet></router-outlet>
-  `,
+    <h1>Backtracking</h1>
+    <markdown [data]="markdown"></markdown>
+    <router-outlet />
+  `
 })
 export class BacktrackingComponent {
   markdown = `#
